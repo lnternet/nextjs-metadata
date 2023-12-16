@@ -4,6 +4,10 @@ import React from "react";
 export const metadata: Metadata = {
   title: "Subpage | nextjs-metadata",
   description: "This is metadata of subpage.",
+  openGraph: {
+    title: "Subpage | nextjs-metadata",
+    description: "This is metadata of subpage.",
+  },
 };
 
 const Subpage: React.FC = () => {

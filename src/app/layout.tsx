@@ -4,6 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "nextjs-metadata",
   description: "Test of metadata in Next.js",
+  openGraph: {
+    title: "nextjs-metadata",
+    description: "Test of metadata in Next.js",
+  },
 };
 
 export default function RootLayout({
