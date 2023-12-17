@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ClientContextProviders from "./clientContextProviders";
 
 export const metadata: Metadata = {
   title: "nextjs-metadata",
@@ -17,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ClientContextProviders>{children}</ClientContextProviders>
+      </body>
     </html>
   );
 }

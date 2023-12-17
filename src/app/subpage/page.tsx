@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import React from "react";
+import ClientComponent from "../../components/clientComponent";
 
 export const metadata: Metadata = {
   title: "Subpage | nextjs-metadata",
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 const Subpage: React.FC = () => {
   return (
     <>
+      <ClientComponent />
       <p>I am a subpage.</p>
       <a href="/">Return to homepage</a>
     </>
